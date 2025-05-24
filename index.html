@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Isabel</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            /* Aqui você coloca a sua foto de background */
+            background: url('/') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        /* Fundo preto meio transparente sobre o background */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* preto com 70% de opacidade */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.4); /* fundo preto com 40% de opacidade */
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            color: white;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+
+        .location {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .role,
+        .highlight {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .links {
+            margin: 20px 0;
+        }
+
+        .links a {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .subscribe {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .subscribe h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .subscribe form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.7);;
+            color: #fff;
+        }
+
+        .subscribe button {
+            padding: 10px;
+            background-color: #ffffff;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .subscribe button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .instagram {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .instagram span {
+            display: block;
+            border: 2px solid #fff;
+            width: 18px;
+            height: 18px;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .instagram span:before,
+        .instagram span:after {
+            content: "";
+            position: absolute;
+        }
+
+        .instagram span:before {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .instagram span:after {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #fff;
+            top: 2px;
+            right: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="container">
+            <img src="Screenshot_4.png" alt="Foto de perfil" class="profile-pic" />
+            <h2>@mbebelribeiro</h2>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Araçatuba | SP</p>
+            <p class="role">Maquiadora 💄 </p>
+
+            <a href="https://www.instagram.com/mbebelbeiro_/" target="_blank" class="instagram-link" aria-label="Instagram">
+                <div class="instagram">
+                    <span></span>
+                </div>
+            </a>
+
+            <p class="highlight">Meus Trabalhos 🪞 </p>
+
+            <div class="links">
+                <a href="#">📁 Minhas Makes</a>
+                <a href="https://wa.me/18988274042" target="_blank">💬 WhatsApp</a>
+            </div>
+
+            <div class="subscribe">
+                <h3>Mantenha-se atualizado</h3>
+                <p>Cadastre-se para receber atualizações exclusivas por e-mail diretamente de mim.</p>
+                <form>
+                    <input type="text" placeholder="First Name" required />
+                    <input type="email" placeholder="Email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
